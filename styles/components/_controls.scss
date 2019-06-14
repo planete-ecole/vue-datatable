@@ -1,0 +1,32 @@
+.datatable_controls > div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.datatable_controls > div:first-child label select {
+  width: 100%;
+  max-width: 75px;
+}
+
+@media screen and(min-width: map-get($grid-breakpoints, md)) {
+  .datatable_controls {
+    & > div {
+      margin-bottom: 0;
+    }
+
+    & > div:first-child {
+      justify-content: flex-start;
+    }
+
+    & > div:last-child {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.datatable_row-count-label {
+  display: block;
+  width: 210px;
+  margin-bottom: 0;
+}
